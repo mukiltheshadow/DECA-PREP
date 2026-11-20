@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roleplay Prep Room: DECA event practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fa;--surface:#fff;--ink:#14233d;--muted:#55627a;--line:#d5dbe6;--blue:#1f4e9c;--gold:#f0b323;--panel:#14233d;--panel-ink:#f6f7fa;--panel-line:#2c4067;--red:#c8372f;--ok:#1f7a4d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1626;--surface:#16213a;--ink:#eaeef6;--muted:#9aa8c2;--line:#2a3a5a;--blue:#7fa6e8;--panel:#0a1120;--panel-line:#26365a;--red:#ff7b72;--ok:#59c98e}}
+:root[data-theme="dark"]{--bg:#0e1626;--surface:#16213a;--ink:#eaeef6;--muted:#9aa8c2;--line:#2a3a5a;--blue:#7fa6e8;--panel:#0a1120;--panel-line:#26365a;--red:#ff7b72;--ok:#59c98e}
+html{color-scheme:light dark;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav .wrap{display:flex;gap:18px;align-items:center;height:56px;overflow-x:auto}
+.brand{font:800 19px "Bricolage Grotesque",sans-serif;white-space:nowrap;margin-right:auto}
+.brand i{display:inline-block;width:12px;height:12px;background:var(--gold);border-radius:50%;margin-right:8px}
+.nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px;white-space:nowrap}
+.nav a:hover{color:var(--ink)}
+.hero{padding:64px 0 40px}
+.hero h1{font-size:clamp(40px,8vw,84px);font-weight:800;letter-spacing:-.02em;max-width:12ch}
+.hero p{max-width:56ch;color:var(--muted);font-size:19px;margin:20px 0 28px}
+.btn{font:600 16px "Public Sans",sans-serif;border:2px solid var(--ink);background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#14233d}
+.btn.ghost{background:transparent;border-color:var(--panel-line);color:var(--panel-ink)}
+section{padding:48px 0}
+section>.wrap>h2{font-size:clamp(28px,4.5vw,42px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 28px}
+.seg{display:inline-flex;border:2px solid var(--ink);border-radius:8px;overflow:hidden;margin-bottom:20px}
+.seg button{font:600 15px "Public Sans",sans-serif;padding:9px 18px;border:0;background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.format{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ink);border-radius:10px;background:var(--surface);overflow:hidden}
+.format .big{padding:28px;border-right:2px solid var(--ink)}
+.format .big h3{font-size:30px;margin-bottom:8px}
+.format dl{margin:0;padding:12px 28px;display:grid;grid-template-columns:auto 1fr;column-gap:20px}
+.format dt,.format dd{padding:11px 0;border-bottom:1px solid var(--line);margin:0}
+.format dt{color:var(--muted);font-size:15px}.format dd{font-weight:600}
+.format dt:nth-last-of-type(1),.format dd:last-of-type{border-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:2px solid var(--ink)}
+.step{padding:20px 20px 24px 0}
+.step b{font:700 20px "Bricolage Grotesque",sans-serif;display:block;margin-bottom:4px}
+.step span{color:var(--muted);font-size:15.5px}
+.step small{display:block;margin-top:8px;color:var(--blue);font-weight:600;font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.two h3{font-size:24px;margin-bottom:10px}
+.two ul{margin:0;padding-left:20px}.two li{margin-bottom:8px}
+.practice{background:var(--panel);color:var(--panel-ink);padding:56px 0}
+.practice h2{color:var(--panel-ink)}.practice .lead{color:#b7c3dc}
+.controls{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;align-items:center}
+.practice .seg{border-color:var(--panel-line);margin:0}.practice .seg button{color:var(--panel-ink)}
+.practice .seg button[aria-pressed="true"]{background:var(--gold);color:#14233d}
+select{font:500 15px "Public Sans",sans-serif;padding:10px 12px;border-radius:8px;border:2px solid var(--panel-line);background:transparent;color:var(--panel-ink)}
+select option{color:#14233d}
+.board{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.card{border:1px solid var(--panel-line);border-radius:10px;padding:24px}
+.card h3{font-size:22px;margin-bottom:6px}
+.tag{display:inline-block;background:var(--gold);color:#14233d;font-weight:600;font-size:13px;padding:2px 10px;border-radius:99px;margin-bottom:12px}
+.card p{margin:0 0 12px}.card ul{margin:0 0 12px;padding-left:20px}
+.card .note{color:#b7c3dc;font-size:15px;border-top:1px solid var(--panel-line);padding-top:12px;margin:0}
+.clock{text-align:center}
+.phase{font-weight:600;color:#b7c3dc;min-height:1.6em}
+.time{font:800 clamp(64px,12vw,104px)/1 "Bricolage Grotesque",sans-serif;font-variant-numeric:tabular-nums;margin:6px 0 14px}
+.time.low{color:#ff7b72}
+.bar{height:8px;background:var(--panel-line);border-radius:4px;overflow:hidden;margin-bottom:18px}
+.bar div{height:100%;width:0;background:var(--gold)}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.review{margin-top:28px;display:none}
+.review.show{display:block}
+.review label{display:flex;gap:10px;align-items:flex-start;padding:8px 0;cursor:pointer}
+.review input{width:20px;height:20px;margin-top:3px;accent-color:var(--gold)}
+.score{font:700 22px "Bricolage Grotesque",sans-serif;margin-top:8px}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.tip{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.tip h3{font-size:19px;margin-bottom:6px}.tip p{margin:0;color:var(--muted);font-size:15.5px}
+.nav a.tab{padding:17px 4px;font-weight:600;font-size:16px}.nav a.tab[aria-current="page"]{color:var(--ink);box-shadow:inset 0 -4px var(--gold)}
+.opt{display:block;width:100%;text-align:left;font:500 16px "Public Sans",sans-serif;padding:12px 16px;margin-bottom:10px;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--blue)}.opt:disabled{cursor:default}.opt.ok{border-color:var(--ok)}.opt.no{border-color:var(--red)}
+.rv{border-left:4px solid var(--line);padding:12px 16px;margin:12px 0;background:var(--bg);border-radius:0 8px 8px 0}.rv.ok{border-color:var(--ok)}.rv.no{border-color:var(--red)}
+.vin{font:500 15px "Public Sans",sans-serif;padding:10px 12px;border-radius:8px;border:2px solid var(--line);background:var(--surface);color:var(--ink);min-width:200px}
+.fc{border:2px solid var(--ink);border-radius:12px;padding:40px 24px;text-align:center;background:var(--surface);cursor:pointer;min-height:180px;display:flex;flex-direction:column;justify-content:center}.fc small{color:var(--muted)}
+.notes{width:100%;font:400 15px/1.5 "Public Sans",sans-serif;padding:12px;border-radius:8px;border:1px solid var(--panel-line);background:transparent;color:var(--panel-ink);resize:vertical}
+.vt{padding:14px 0;border-bottom:1px solid var(--line)}.vt b{font:700 18px "Bricolage Grotesque",sans-serif}.vt span{color:var(--muted);font-size:14px;margin-left:10px}
+.qtop{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.qtop select{border-color:var(--line);color:var(--ink)}.qtop select option{color:#14233d}
+.qq{font:700 24px/1.25 "Bricolage Grotesque",sans-serif;margin:8px 0 18px}
+.why{margin:14px 0;padding:12px 16px;border-left:4px solid var(--gold);background:var(--bg)}
+footer{padding:36px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:760px){.format,.two,.board{grid-template-columns:1fr}.format .big{border-right:0;border-bottom:2px solid var(--ink)}.format dl{padding:8px 20px}.hero{padding-top:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<span class="brand"><i></i>Roleplay Prep Room</span>
+<a class="tab" href="#learn" data-t="learn">Learn</a><a class="tab" href="#roleplay" data-t="roleplay">Roleplay practice</a><a class="tab" href="#test" data-t="test">Test prep</a><a class="tab" href="#vocab" data-t="vocab">Vocab</a>
+</div></header>
+
+<main>
+<div class="panel" id="tab-learn">
+<div class="wrap hero">
+<h1>Read it. Plan it. Pitch it.</h1>
+<p>Learn how DECA individual and team roleplay events work, then run timed practice rounds, quiz yourself on exam questions, and build your business vocabulary.</p>
+<a class="btn gold" href="#roleplay">Start a roleplay round</a>
+<a class="btn alt" href="#test">Try test prep</a>
+<a class="btn alt" href="#formats">See how events work</a>
+</div>
+
+<section id="formats"><div class="wrap">
+<h2>Individual or team: what changes</h2>
+<p class="lead">Both formats test the same thing: can you solve a business problem and explain it clearly to a judge who plays the role of a client or boss?</p>
+<div class="seg" role="group" aria-label="Event format">
+<button id="f-ind" aria-pressed="true">Individual</button><button id="f-team" aria-pressed="false">Team</button>
+</div>
+<div class="format">
+<div class="big"><h3 id="f-title"></h3><p id="f-desc" style="margin:0;color:var(--muted)"></p></div>
+<dl id="f-list"></dl>
+</div>
+<p style="color:var(--muted);font-size:14px;margin-top:12px">Times and scoring details can change each season. Check your event’s guidelines on deca.org before you compete.</p>
+</div></section>
+
+<section id="method"><div class="wrap">
+<h2>The prep-time method</h2>
+<p class="lead">Judges score you on specific performance indicators (PIs). A simple routine keeps you from running out of time.</p>
+<div class="steps">
+<div class="step"><b>Read twice</b><span>First pass for the story. Second pass: underline who you are, who the judge is, and the exact problem.</span><small>About 15% of prep</small></div>
+<div class="step"><b>Find every PI</b><span>List each indicator. Each one needs its own clear moment in your presentation.</span><small>About 15%</small></div>
+<div class="step"><b>Pick one recommendation</b><span>Choose a single plan and defend it with facts, numbers, and a reason it fits this business.</span><small>About 40%</small></div>
+<div class="step"><b>Outline and rehearse</b><span>Greeting, problem, plan, benefits, risks, close. Say your opening line out loud.</span><small>About 30%</small></div>
+</div>
+</div></section>
+
+<section style="padding-top:8px"><div class="wrap"><h2>A simple weekly plan</h2><p class="lead">Short, steady practice beats cramming before a competition.</p><div class="tips">
+<div class="tip"><h3>Two roleplay rounds</h3><p>Do each in full time. Use the prep notes outline, then score yourself honestly.</p></div>
+<div class="tip"><h3>Two test rounds</h3><p>Play a 20-question round, read every explanation, then use Retry missed.</p></div>
+<div class="tip"><h3>Five minutes of vocab, daily</h3><p>Flip flashcards and say each definition in your own words before you reveal it.</p></div>
+</div></div></section>
+<section style="padding-top:8px"><div class="wrap two">
+<div><h3>Open and close strong</h3><ul>
+<li>Greet the judge, say your role, and state the problem in one sentence.</li>
+<li>Give your recommendation early, then explain it.</li>
+<li>Close by summarizing, naming next steps, and inviting questions.</li></ul></div>
+<div><h3>Handle judge questions</h3><ul>
+<li>Pause, answer directly, and tie your answer back to the scenario.</li>
+<li>If you are unsure, reason it out loud instead of guessing.</li>
+<li>Judges often ask about risks or costs. Plan an answer for both.</li></ul></div>
+</div></section>
+
+</div>
+<div class="panel" id="tab-roleplay" hidden>
+<div class="practice" id="practice"><div class="wrap">
+<h2>Practice room</h2>
+<p class="lead">Pick a format and cluster, get a scenario, and start the clock. Prep first, then present out loud to a mirror, a friend, or a recording.</p>
+<div class="controls">
+<div class="seg" role="group" aria-label="Practice format">
+<button id="p-ind" aria-pressed="true">Individual</button><button id="p-team" aria-pressed="false">Team</button></div>
+<label class="sr" for="cl" style="position:absolute;left:-9999px">Career cluster</label>
+<select id="cl"><option value="">All clusters</option><option>Marketing</option><option>Finance</option><option>Hospitality</option><option>Business Management</option><option>Entrepreneurship</option></select>
+<select id="len" aria-label="Timer length"><option value="1">Full event timing</option><option value="0.3">Quick drill (shorter)</option></select>
+<button class="btn gold" id="newbtn">New scenario</button>
+</div>
+<div class="board">
+<div class="card" id="scn"></div>
+<div class="card clock">
+<div class="phase" id="phase" aria-live="polite">Ready</div>
+<div class="time" id="time">10:00</div>
+<div class="bar"><div id="fill"></div></div>
+<div class="row">
+<button class="btn gold" id="go">Start prep</button>
+<button class="btn ghost" id="skip">Skip to presenting</button>
+<button class="btn ghost" id="reset">Reset</button>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:28px"><h3>Prep notes</h3><p style="color:#b7c3dc;margin:0 0 10px">An outline built from this scenario’s indicators. Edit it during prep, then present from it.</p><label for="notes" style="position:absolute;left:-9999px">Prep notes</label><textarea id="notes" class="notes" rows="12"></textarea></div>
+<div class="card review" id="review">
+<h3>Self-check</h3>
+<p style="color:#b7c3dc;margin-bottom:8px">Be honest. Tick what you actually did.</p>
+<div id="checks"></div>
+<div class="score" id="score">0 of 6</div>
+</div>
+</div></div>
+
+<section id="tips"><div class="wrap">
+<h2>Team roleplay tips</h2>
+<p class="lead">Team events reward partners who sound like one company, not two people taking turns.</p>
+<div class="tips">
+<div class="tip"><h3>Split by PI, not by time</h3><p>Give each partner specific indicators to own so nothing gets covered twice or missed.</p></div>
+<div class="tip"><h3>Practice the handoff</h3><p>End your section with a bridge line like “Next, Jordan will cover the budget.” Smooth handoffs show teamwork.</p></div>
+<div class="tip"><h3>Share the Q&A</h3><p>Either partner can answer. Add to your partner’s answer instead of repeating it.</p></div>
+<div class="tip"><h3>Use all your prep time</h3><p>Team prep is longer. Spend the extra time on a shared outline and on who says what.</p></div>
+<div class="tip"><h3>Individual? Own the room</h3><p>With no partner, your pace matters. Speak slowly, use pauses, and watch the clock on a visible timer.</p></div>
+<div class="tip"><h3>Study the real thing</h3><p>Download past roleplays and rubrics from deca.org and score yourself using the real indicators.</p></div>
+</div>
+</div></section>
+</div>
+<div class="panel" id="tab-test" hidden>
+<section><div class="wrap">
+<h2>Test prep</h2>
+<p class="lead">The DECA exam is multiple choice and covers business basics across clusters. Answer a round of practice questions, read why each answer is right, and note the vocabulary you miss.</p>
+<div class="qtop">
+<select id="qcl" aria-label="Question cluster"><option value="">All clusters</option><option>Marketing</option><option>Finance</option><option>Hospitality</option><option>Business Management</option><option>Entrepreneurship</option><option>Economics</option><option>Business Law</option><option>Operations</option></select>
+<select id="qlv" aria-label="Difficulty level"><option value="">All levels</option><option>Basic</option><option>State</option><option>ICDC</option></select>
+<select id="qn" aria-label="Questions per round"><option value="10">10 questions</option><option value="5">5 questions</option><option value="20">20 questions</option><option value="50">50 questions</option></select>
+<button class="btn" id="qnew">New round</button>
+</div>
+<p id="stats" style="color:var(--muted)"></p>
+<div class="tip" id="quiz" style="padding:24px" aria-live="polite"></div>
+<div class="tips" style="margin-top:28px">
+<div class="tip"><h3>Read the whole question</h3><p>Words like “best,” “first,” and “except” change the answer. Underline them.</p></div>
+<div class="tip"><h3>Eliminate two choices</h3><p>Cross out answers you know are wrong, then pick between what remains.</p></div>
+<div class="tip"><h3>Keep a miss list</h3><p>Write down every term you miss and review that list before your next round.</p></div>
+</div>
+</div></section>
+</div>
+<div class="panel" id="tab-vocab" hidden>
+<section><div class="wrap">
+<h2>Vocab</h2>
+<p class="lead">Exam questions use precise business terms. Browse the glossary, then use Quiz me to match definitions to terms.</p>
+<div class="seg" role="group" aria-label="Vocab mode"><button id="v-list" aria-pressed="true">Glossary</button><button id="v-card" aria-pressed="false">Flashcards</button><button id="v-quiz" aria-pressed="false">Quiz me</button></div>
+<div class="qtop">
+<select id="vcl" aria-label="Vocab cluster"><option value="">All clusters</option><option>Marketing</option><option>Finance</option><option>Hospitality</option><option>Business Management</option><option>Entrepreneurship</option><option>Economics</option><option>Business Law</option><option>Operations</option></select>
+<input id="vq" class="vin" type="search" placeholder="Search terms" aria-label="Search terms">
+</div>
+<div id="vbox" aria-live="polite"></div>
+</div></section>
+</div>
+</main>
+<footer><div class="wrap">Practice scenarios and test questions are original and written for study, modeled on the topics DECA tests. They are not official DECA materials.</div></footer>
+
+<script>
+(function(){
+var F={ind:{t:"Individual series",d:"You work alone. You read a scenario, plan, then present to a judge who plays the client or manager.",r:[["Prep time","10 minutes"],["Presentation","Up to 10 minutes"],["Presenters","1"],["Judges","Usually 1"],["Also includes","Written exam"]]},
+team:{t:"Team decision making",d:"You and a partner analyze a case together, divide the work, and present a joint recommendation.",r:[["Prep time","30 minutes"],["Presentation","Up to 15 minutes"],["Presenters","2 partners"],["Judges","Usually 1 to 2"],["Also includes","Written exam"]]}};
+var fm="ind";
+function showF(k){fm=k;var o=F[k];document.getElementById("f-title").textContent=o.t;document.getElementById("f-desc").textContent=o.d;
+document.getElementById("f-list").innerHTML=o.r.map(function(x){return"<dt>"+x[0]+"</dt><dd>"+x[1]+"</dd>"}).join("");
+document.getElementById("f-ind").setAttribute("aria-pressed",k=="ind");document.getElementById("f-team").setAttribute("aria-pressed",k=="team")}
+document.getElementById("f-ind").onclick=function(){showF("ind")};
+document.getElementById("f-team").onclick=function(){showF("team")};
+showF("ind");
+
+var S=[
+{c:"Marketing",role:"marketing coordinator",j:"store owner",b:["Hilltop Sports has one store in a town of 28,000 and has been open 14 years.","Summer sales average $62,000 a month. Winter sales fall to about $31,000.","Competitors include a big-box chain 10 miles away and online retailers.","Best-selling winter items are boots, jackets, and ice skates.","The owner can spend about $4,000 on promotion this winter and wants results she can measure."],t:"A family-owned sporting goods store sells well in summer but sales drop sharply every winter. The owner wants a low-cost plan to keep customers coming in from November to February.",p:["Explain the nature of promotional plans","Describe the role of seasonal pricing","Identify a target market for winter products","Select promotional channels","Explain how to evaluate results"]},
+{c:"Marketing",role:"social media consultant",j:"café owner",b:["Maple & Bean is two years old with a loyal morning crowd but slow afternoons.","The average ticket is $7.50, and about 180 customers visit on a weekday.","A local food influencer with 22,000 followers offered a $600 sponsored post plus free drinks.","The monthly promotion budget is $1,000.","The owner worries that likes and views will not turn into paying customers."],t:"A neighborhood café wants to partner with a local influencer. The owner is worried about cost and whether followers will become actual customers.",p:["Explain the use of influencers in promotion","Describe ways to measure promotional results","Recommend a budget approach","Identify the café’s target customers","Explain risks of promotional partnerships"]},
+{c:"Finance",role:"credit union advisor",j:"16-year-old customer",b:["Maya works 12 hours a week at $11 an hour and has $1,100 in savings.","She wants a credit card to build credit and to buy a laptop for school.","At 16, she would need an adult co-signer or to be added as an authorized user.","The credit union also offers a debit card and a youth savings account.","A parent is worried about debt, interest, and fees."],t:"A teenager with a part-time job wants a first credit card. A parent is hesitant. You need to explain the risks and benefits and suggest next steps.",p:["Explain the importance of credit","Describe how interest and fees work","Recommend responsible money habits","Describe the role of a credit score","Explain how to involve a parent in the decision"]},
+{c:"Finance",role:"small business banker",j:"bakery owner",b:["Sweet Rise Bakery has operated for 3 years. Sales grew 18% last year to $210,000.","A second oven costs $18,000 and would raise capacity by about 40%.","The owner has $7,500 saved. An $18,000 loan at 8% over 5 years costs about $365 a month.","Cash flow is uneven: holiday months are strong and late winter is slow.","The owner wants to know the total cost of borrowing and what could go wrong."],t:"A bakery owner can either take a loan to buy a second oven or save for a year. Sales are growing but cash flow is uneven.",p:["Compare financing options","Explain the cost of borrowing","Describe the role of cash flow","Explain how to assess business risk","Recommend a decision with next steps"]},
+{c:"Hospitality",role:"assistant manager",j:"hotel general manager",b:["The Harbor Inn has 60 rooms near a small downtown and the waterfront.","Weekend occupancy is about 92%. Weekday occupancy is about 34%.","The average room rate is $139, and breakfast is complimentary.","Nearby are a hospital, a community college, and a conference center that holds monthly events.","Leadership does not want cuts to housekeeping or front-desk staffing."],t:"A boutique hotel is nearly full on weekends but only a third full on weekdays. Leadership wants ideas to raise weekday bookings without cutting service quality.",p:["Explain how to build occupancy","Describe a target market for weekdays","Recommend a pricing or package strategy","Describe ways to partner with local businesses","Explain how to protect guest satisfaction"]},
+{c:"Business Management",role:"shift supervisor",j:"district manager",b:["The store has 14 employees. Two cashiers, Jordan (6 years) and Casey (8 months), clash over schedule swaps and breaks.","Customer complaints rose from 3 to 11 last month. One customer left after overhearing an argument.","Employees say the previous supervisor played favorites with schedules.","The company has an HR policy and an employee assistance program.","The district manager wants a fair, documented plan within 30 days."],t:"Two team members at a busy retail location are in constant conflict, and morale is dropping. Customers have started to notice.",p:["Explain conflict-resolution methods","Describe the manager’s role in motivation","Recommend a follow-up plan","Explain how to communicate with each employee","Describe how conflict affects customer service"]},
+{c:"Business Management",role:"purchasing agent",j:"company owner",b:["Your company buys about $400,000 a year in packaging from Pinecrest Supply.","The contract renews in 6 weeks.","The supplier offered two tickets to a championship game worth about $600.","Company policy caps gifts at $50, but you are unsure it has ever been enforced.","A competing supplier has bid 6% lower. The owner values trust with suppliers."],t:"A supplier offers you tickets to a major event while contract renewal talks are underway. The owner asks what you plan to do.",p:["Explain ethical business behavior","Describe conflicts of interest","Recommend a company gift policy","Explain how to respond to the supplier","Describe the effect on business relationships"]},
+{c:"Entrepreneurship",role:"business partner",j:"food truck owner",b:["Taco Trail earned $96,000 in its first season (April to October).","A used second truck costs $58,000. Hiring and permits add about $9,000.","Winter revenue is about 40% lower because of weather.","The current truck is booked on weekends but has gaps midweek.","The owner’s long-term goal is event catering."],t:"A food truck owner wants to buy a second truck after one great summer. You must advise whether to expand now or wait.",p:["Explain risks of expansion","Describe how to research demand","Recommend a timeline and funding plan","Describe the financial impact of a second truck","Explain how to maintain food quality and service"]}];
+var CK=["I greeted the judge and stated my role","I covered every performance indicator","I gave one clear recommendation","I supported ideas with facts or numbers","I closed with a summary and asked for questions","I finished within the time limit"];
+function outline(){return"Greeting and my role:\n\nThe problem in one sentence:\n\nMy recommendation:\n\n"+cur.p.map(function(x,i){return"PI "+(i+1)+": "+x+"\n- "}).join("\n\n")+"\n\nRisks and next steps:\n\nClose and invite questions:\n"}
+function beep(){try{var C=window.AudioContext||window.webkitAudioContext,a=new C(),o=a.createOscillator(),g=a.createGain();o.frequency.value=880;g.gain.value=.08;o.connect(g);g.connect(a.destination);o.start();setTimeout(function(){o.stop();a.close()},250)}catch(e){}}
+var cur=null,pm="ind",phase="idle",rem=0,tot=0,iv=null,paused=false;
+var $=function(i){return document.getElementById(i)};
+function mins(){var m=pm=="ind"?[10,10]:[30,15],k=parseFloat($("len").value);return[Math.round(m[0]*k*60),Math.round(m[1]*k*60)]}
+function fmt(s){return Math.floor(s/60)+":"+("0"+(s%60)).slice(-2)}
+function scen(){
+var cl=$("cl").value,pool=S.filter(function(x){return!cl||x.c==cl}),n;
+do{n=pool[Math.floor(Math.random()*pool.length)]}while(pool.length>1&&n===cur);cur=n;
+var team=pm=="team"?"Split the indicators between partners before prep ends and plan your handoffs.":"Plan an opening line and a closing line you can say without notes.";
+$("scn").innerHTML='<span class="tag">'+cur.c+'</span><h3>You are the '+cur.role+'</h3><p>'+cur.t+'</p><p><b>Background</b></p><ul>'+cur.b.map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul><p><b>Your judge plays:</b> '+cur.j+'</p><p><b>Performance indicators</b></p><ul>'+cur.p.map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul><p class="note">'+team+'</p>';
+$("notes").value=outline();reset()}
+function draw(){$("time").textContent=fmt(rem);$("time").className="time"+(rem<=60&&phase!="idle"?" low":"");
+$("fill").style.width=(tot?(100*(tot-rem)/tot):0)+"%"}
+function stop(){clearInterval(iv);iv=null}
+function begin(p){if(p=="present")beep();phase=p;var t=mins();tot=rem=p=="prep"?t[0]:t[1];
+$("phase").textContent=p=="prep"?"Prep time: plan with your notes":"Presenting: talk out loud";
+$("go").textContent="Pause";paused=false;draw();stop();iv=setInterval(tick,1000)}
+function tick(){rem--;if(rem<=0){rem=0;draw();stop();if(phase=="prep"){begin("present")}else{finish()}return}draw()}
+function finish(){beep();phase="done";$("phase").textContent="Time. Finish your thought and review below.";$("go").textContent="Start prep";$("review").classList.add("show");$("review").scrollIntoView({block:"nearest"})}
+function reset(){stop();phase="idle";var t=mins();rem=tot=t[0];paused=false;$("phase").textContent="Ready: prep time is "+Math.round(t[0]/60*10)/10+" min";$("go").textContent="Start prep";$("review").classList.remove("show");buildChecks();draw()}
+function buildChecks(){$("checks").innerHTML=CK.map(function(c,i){return'<label><input type="checkbox" data-i="'+i+'"><span>'+c+'</span></label>'}).join("");$("score").textContent="0 of 6";
+$("checks").onchange=function(){$("score").textContent=$("checks").querySelectorAll("input:checked").length+" of 6"}}
+$("go").onclick=function(){
+if(phase=="idle"||phase=="done"){$("review").classList.remove("show");buildChecks();begin("prep");return}
+if(paused){paused=false;$("go").textContent="Pause";iv=setInterval(tick,1000)}else{paused=true;stop();$("go").textContent="Resume"}}
+$("skip").onclick=function(){if(phase=="prep"||phase=="idle"||phase=="done")begin("present")};
+$("reset").onclick=reset;$("newbtn").onclick=scen;$("cl").onchange=scen;$("len").onchange=reset;
+function setM(k){pm=k;$("p-ind").setAttribute("aria-pressed",k=="ind");$("p-team").setAttribute("aria-pressed",k=="team");scen()}
+$("p-ind").onclick=function(){setM("ind")};$("p-team").onclick=function(){setM("team")};
+scen();
+})();
+</script>
+<script>
+(function(){
+var Q=[
+["Marketing","A company sells through its own website and retail stores. Which part of the marketing mix does this decision involve?",["Product","Price","Place","Promotion"],2,"Place (distribution) covers how and where customers can get a product."],
+["Marketing","Dividing a market into groups by age, income, or location is called:",["Market segmentation","Market penetration","Positioning","Brand extension"],0,"Segmentation splits a broad market into smaller groups with shared traits."],
+["Marketing","A survey sent to 500 customers to learn their preferences is an example of:",["Secondary research","Primary research","A trade show","Competitive pricing"],1,"Primary research is data you collect yourself for a specific purpose."],
+["Finance","The percentage a lender charges for borrowing money is the:",["Principal","Down payment","Interest rate","Collateral"],2,"The interest rate is the cost of borrowing, shown as a percentage."],
+["Finance","Which item is an asset for a business?",["Loan payable","Equipment","Rent expense","Wages payable"],1,"Assets are things a business owns that have value, such as equipment."],
+["Finance","Revenue minus expenses equals:",["Net profit","Gross sales","Equity","Liabilities"],0,"When revenue is greater than expenses, the result is profit."],
+["Hospitality","Occupancy rate measures:",["Hotel employee turnover","The share of available rooms that are sold","Average room price","Guest complaints"],1,"Occupancy rate is rooms sold divided by rooms available."],
+["Hospitality","A guest complains about a noisy room. What is the best first step?",["Explain hotel policy","Offer a refund right away","Listen, apologize, and offer a solution","Ask the guest to call back later"],2,"Listening and apologizing calms the guest and opens the way to a fix."],
+["Hospitality","Lowering room prices during slow months to attract guests is called:",["Seasonal pricing","Price fixing","Upselling","Overbooking"],0,"Seasonal pricing adjusts prices to match changes in demand."],
+["Business Management","A manager who asks the team for input before deciding is using which style?",["Autocratic","Democratic","Laissez-faire","Transactional only"],1,"Democratic (participative) leaders involve employees in decisions."],
+["Business Management","In a SMART goal, the “M” stands for:",["Manageable","Motivated","Measurable","Marketable"],2,"A measurable goal lets you track progress with numbers."],
+["Business Management","Which is an example of a conflict of interest?",["Training a new hire","Picking a supplier because it is owned by your cousin","Asking for a budget increase","Reporting sales numbers"],1,"Personal ties can bias a business decision."],
+["Entrepreneurship","A written document describing a business’s goals and how it will reach them is a:",["Business plan","Balance sheet","Contract","Résumé"],0,"A business plan guides decisions and helps win funding."],
+["Entrepreneurship","Which business form gives the owner unlimited personal liability?",["Corporation","Limited liability company","Sole proprietorship","Nonprofit"],2,"A sole proprietor is personally responsible for the business’s debts."],
+["Entrepreneurship","Money needed to get a new business started is called:",["Startup capital","Net income","Dividends","Accounts receivable"],0,"Startup capital pays for the early costs of opening."],
+["Marketing","A retailer raises the price of a luxury watch and sales rise because buyers see it as a status symbol. This is:",["Prestige pricing","Penetration pricing","Loss-leader pricing","Bundle pricing"],0,"Prestige pricing uses a high price to signal quality and status.","State"],
+["Marketing","Which pricing strategy sets a low starting price to win market share fast?",["Price skimming","Penetration pricing","Prestige pricing","Odd-even pricing"],1,"Penetration pricing trades early profit for quick share.","State"],
+["Marketing","A snack brand’s new flavor pulls sales away from its existing flavor. This is called:",["Market penetration","Cannibalization","Diversification","Segmentation"],1,"Cannibalization happens when a new product takes sales from your own product.","ICDC"],
+["Marketing","Sales growth slows, competition peaks, and promotion focuses on loyalty. Which product life cycle stage is this?",["Introduction","Growth","Maturity","Decline"],2,"Maturity brings slowing growth and heavy competition.","State"],
+["Marketing","Which research method best tests whether a price change causes a change in sales?",["Focus group","Observation","Experimental research","Secondary research"],2,"Experiments change one variable and measure the effect.","ICDC"],
+["Marketing","In a SWOT analysis, which items are external to the business?",["Strengths and weaknesses","Opportunities and threats","Strengths and threats","Weaknesses and opportunities"],1,"Opportunities and threats come from outside the business.","State"],
+["Marketing","A company estimates how much a customer will spend over several years to decide how much to invest in keeping that customer. This is:",["Customer lifetime value","Market share","Break-even analysis","Brand equity"],0,"Customer lifetime value guides retention spending.","ICDC"],
+["Marketing","B2B buying decisions usually differ from B2C because they:",["Are always impulsive","Involve multiple decision makers and formal criteria","Ignore price","Skip negotiation"],1,"Business buyers often follow committees, budgets, and specifications.","State"],
+["Marketing","An ad that names a competitor and shows why your product is better is:",["Institutional advertising","Comparative advertising","Cooperative advertising","Reminder advertising"],1,"Comparative ads directly contrast brands.","State"],
+["Marketing","A company uses the same product and message in every country with no changes. This is:",["Adapted marketing","Standardized marketing","Niche marketing","Direct marketing"],1,"Standardization saves cost but may ignore local differences.","ICDC"],
+["Finance","Current assets are $60,000 and current liabilities are $40,000. What is the current ratio?",["0.67","1.5","2.0","20,000"],1,"60,000 ÷ 40,000 = 1.5.","State"],
+["Finance","Sales are $400,000 and gross profit is $120,000. What is the gross profit margin?",["12%","25%","30%","33%"],2,"120,000 ÷ 400,000 = 30%.","State"],
+["Finance","Assets are $90,000 and liabilities are $35,000. What is owner’s equity?",["$125,000","$55,000","$35,000","$90,000"],1,"Assets − liabilities = equity.","State"],
+["Finance","Which statement shows a company’s financial position on one date?",["Income statement","Cash flow statement","Balance sheet","Budget"],2,"The balance sheet is a snapshot of assets, liabilities, and equity.","State"],
+["Finance","Using the Rule of 72, about how long will money take to double at a 6% annual return?",["6 years","12 years","18 years","72 years"],1,"72 ÷ 6 = 12.","ICDC"],
+["Finance","A $1,000 bond has a 5% coupon rate. What is the annual interest payment?",["$5","$50","$500","$105"],1,"5% of $1,000 = $50.","State"],
+["Finance","Which ratio measures the ability to pay short-term debts without selling inventory?",["Debt-to-equity ratio","Quick ratio","Gross margin","Inventory turnover"],1,"The quick (acid-test) ratio excludes inventory.","ICDC"],
+["Finance","During rising prices, FIFO inventory costing generally results in:",["Higher cost of goods sold","Lower net income","Lower cost of goods sold and higher net income","No effect on income"],2,"FIFO puts older, cheaper costs into COGS when prices rise.","ICDC"],
+["Finance","Which factor carries the most weight in most credit scores?",["Payment history","Age","Income","Number of bank accounts"],0,"On-time payment history is the largest factor.","State"],
+["Finance","Compound interest differs from simple interest because it is earned on:",["Principal only","Principal plus past interest","Fees only","Withdrawals"],1,"Interest earns interest over time.","State"],
+["Finance","Inflation hurts people on fixed incomes mainly because it:",["Raises their wages","Lowers purchasing power","Lowers taxes","Raises savings rates"],1,"The same dollars buy less.","State"],
+["Finance","Which insurance protects an owner if a customer is injured and sues?",["Property insurance","Liability insurance","Life insurance","Auto insurance only"],1,"Liability insurance covers claims of harm to others.","State"],
+["Hospitality","RevPAR is calculated by dividing:",["Total expenses by rooms sold","Room revenue by available rooms","Rooms sold by guests","Profit by employees"],1,"Revenue per available room = room revenue ÷ rooms available.","State"],
+["Hospitality","A 200-room hotel sells 150 rooms at an average of $120. What is the RevPAR?",["$90","$120","$150","$180"],0,"Room revenue is $18,000; ÷ 200 rooms = $90.","ICDC"],
+["Hospitality","A 200-room hotel sells 150 rooms in one night. What is the occupancy rate?",["50%","65%","75%","150%"],2,"150 ÷ 200 = 75%.","State"],
+["Hospitality","Yield management means:",["Cutting every price","Adjusting rates and inventory to maximize revenue as demand changes","Lowering staff","Skipping marketing"],1,"Rates rise and fall with demand to maximize revenue.","ICDC"],
+["Hospitality","Hotels overbook mainly to:",["Reduce housekeeping","Offset expected cancellations and no-shows","Raise taxes","Avoid guests"],1,"Overbooking protects revenue from empty rooms.","State"],
+["Hospitality","Which is a fixed cost for a restaurant?",["Ingredients","Extra servers’ hourly wages","Monthly lease payment","Credit card fees"],2,"A lease stays the same regardless of sales.","State"],
+["Hospitality","A convention and visitors bureau (CVB) mainly:",["Runs hotels","Promotes a destination to visitors and meeting planners","Sets room prices","Licenses restaurants"],1,"CVBs market the destination as a whole.","State"],
+["Hospitality","Tourism that limits environmental harm and supports local communities is:",["Mass tourism","Ecotourism","Business tourism","Cruise tourism"],1,"Ecotourism emphasizes sustainability.","State"],
+["Business Management","Recognition from peers best fits which Maslow need level?",["Physiological","Safety","Esteem","Self-actualization"],2,"Esteem includes respect and recognition.","State"],
+["Business Management","The management function of comparing results to goals and correcting gaps is:",["Planning","Organizing","Staffing","Controlling"],3,"Controlling monitors performance and adjusts.","State"],
+["Business Management","When a manager delegates a task, who keeps ultimate accountability?",["The employee alone","The manager","The customer","No one"],1,"You can delegate work but not accountability.","ICDC"],
+["Business Management","An organization groups employees into marketing, finance, and operations departments. This is a:",["Functional structure","Matrix structure","Flat structure only","Team-only structure"],0,"Functional structures group by job type.","State"],
+["Business Management","Span of control refers to:",["Number of employees a manager directly supervises","Length of a project","Company budget","Number of customers"],0,"A wide span means more direct reports.","ICDC"],
+["Business Management","A team is arguing over roles after first coming together. Which stage is this?",["Forming","Storming","Norming","Performing"],1,"Storming is when conflict emerges.","State"],
+["Business Management","Which law bans employment discrimination based on race, color, religion, sex, or national origin?",["FLSA","Title VII of the Civil Rights Act","Sherman Act","Truth in Lending Act"],1,"Title VII covers those protected traits.","State"],
+["Business Management","The Fair Labor Standards Act sets rules for:",["Minimum wage and overtime","Workplace dress","Product labels","Interest rates"],0,"The FLSA covers wages, overtime, and child labor.","State"],
+["Business Management","Which tool shows project tasks over time with start and end dates?",["Pie chart","Gantt chart","Balance sheet","SWOT matrix"],1,"Gantt charts schedule tasks visually.","ICDC"],
+["Business Management","Which plan has the longest time horizon?",["Operational plan","Tactical plan","Strategic plan","Daily schedule"],2,"Strategic plans set long-term direction.","State"],
+["Business Management","Using unexplained jargon with a new employee is an example of:",["Active listening","A communication barrier","Feedback","Delegation"],1,"Jargon blocks understanding.","State"],
+["Entrepreneurship","Break-even units equal fixed costs divided by:",["Selling price","Variable cost per unit","Selling price minus variable cost per unit","Total revenue"],2,"That difference is the contribution margin per unit.","State"],
+["Entrepreneurship","Fixed costs are $12,000, price is $50, and variable cost is $20 per unit. How many units are needed to break even?",["240","400","600","1,200"],1,"12,000 ÷ (50 − 20) = 400.","ICDC"],
+["Entrepreneurship","Selling ownership shares to raise money is:",["Debt financing","Equity financing","Trade credit","Leasing"],1,"Equity financing trades ownership for capital.","State"],
+["Entrepreneurship","A venture capital firm usually:",["Gives grants","Invests in high-growth startups for an ownership stake","Offers personal loans","Sets minimum wage"],1,"VCs seek high returns through equity.","ICDC"],
+["Entrepreneurship","A benefit of buying a franchise is:",["No fees","An established brand and training","Total independence","No rules"],1,"Franchisees get support but pay fees and follow rules.","State"],
+["Entrepreneurship","A unique selling proposition (USP) is:",["A discount","What makes a product different from competitors","A tax form","A cost estimate"],1,"A USP is the main reason to choose you.","ICDC"],
+["Entrepreneurship","The SBA mainly helps small businesses by:",["Printing money","Guaranteeing loans and offering counseling","Setting prices","Hiring workers directly"],1,"The SBA backs loans and provides advice.","State"],
+["Entrepreneurship","Which type of intellectual property protects a brand name or logo?",["Patent","Copyright","Trademark","Trade route"],2,"Trademarks protect brand identifiers.","State"],
+["Entrepreneurship","The purpose of a minimum viable product (MVP) is to:",["Launch with every feature","Test an idea with real customers using minimal features","Avoid feedback","Set final prices"],1,"An MVP lets you learn before spending more.","ICDC"],
+["Economics","If demand rises and supply stays the same, price will most likely:",["Fall","Rise","Stay the same","Disappear"],1,"More demand against fixed supply pushes prices up.","State"],
+["Economics","Opportunity cost is:",["The price paid","The value of the next best alternative given up","Total profit","A tax"],1,"Every choice gives up something.","State"],
+["Economics","GDP measures:",["Total value of goods and services produced in a country in a period","Government debt","Total exports only","Stock prices"],0,"GDP is the common measure of output.","State"],
+["Economics","The Federal Reserve raises interest rates mainly to:",["Increase inflation","Slow inflation by reducing borrowing and spending","Lower taxes","Raise wages"],1,"Higher rates cool demand.","ICDC"],
+["Economics","Demand is elastic. If a business raises its price, total revenue will most likely:",["Rise","Fall","Stay the same","Double"],1,"Quantity drops by a larger percentage than price rises.","ICDC"],
+["Economics","Many sellers offering identical products describes:",["Monopoly","Perfect competition","Oligopoly","Monopsony"],1,"Perfect competition has many sellers and identical goods.","ICDC"],
+["Economics","Which is a fiscal policy tool?",["Changing the federal funds rate","Changing government spending or taxes","Reserve requirements","Open market operations"],1,"Fiscal policy is government spending and taxation.","State"],
+["Economics","Diminishing marginal utility means each additional unit consumed gives:",["More satisfaction","Less additional satisfaction","No cost","Equal profit"],1,"Satisfaction per extra unit falls.","ICDC"],
+["Hospitality","A ski lodge texts a coupon to opted-in guests when their phones enter the lodge’s lobby. Which technology does this use?",["Geolocation","Just-in-time ordering","Voice search","Barcode scanning"],0,"Geolocation lets a business target messages by a customer’s physical location.","State"],
+["Hospitality","A server learns a guest’s soup was cold, replaces it, apologizes, and takes 15% off the bill. This process is:",["Upselling","Guest recovery","Cross-selling","Yield management"],1,"Guest recovery turns a dissatisfied guest into a satisfied one.","State"],
+["Hospitality","A hotel expects a large wedding party over a holiday weekend. Which step best prepares the front desk?",["Cut staff hours","Schedule extra staff and pre-assign rooms","Close the lobby","Raise breakfast prices only"],1,"Planning staffing and room assignments protects service during demand peaks.","State"],
+["Hospitality","Which hotel department is mainly responsible for room cleanliness and linen inventory?",["Front office","Housekeeping","Sales","Accounting"],1,"Housekeeping cleans rooms and manages linens and supplies.","State"],
+["Hospitality","A café order totals $42.00. A customer uses a 15% off coupon. What is due before tax?",["$35.70","$36.50","$37.80","$40.20"],0,"15% of $42.00 is $6.30; $42.00 − $6.30 = $35.70.","State"],
+["Hospitality","At check-in, a hotel places a temporary hold on part of a guest’s credit limit. The purpose is to:",["Charge the full stay immediately","Make sure funds are available for charges during the stay","Raise the room rate","Cancel the reservation"],1,"An authorization hold confirms available credit without final charging.","State"],
+["Hospitality","A hotel earned $24,000 in room revenue by selling 200 rooms. What is its ADR (average daily rate)?",["$100","$120","$140","$240"],1,"ADR = room revenue ÷ rooms sold = 24,000 ÷ 200.","ICDC"],
+["Hospitality","A 120-room hotel sold 90 rooms and earned $9,900 in room revenue. What is its RevPAR?",["$55.00","$82.50","$90.00","$110.00"],1,"RevPAR = revenue ÷ rooms available = 9,900 ÷ 120.","ICDC"],
+["Hospitality","A restaurant’s food cost is $3.60 per plate, and it targets a 30% food cost percentage. What menu price meets the target?",["$10.80","$12.00","$14.40","$16.00"],1,"Price = food cost ÷ target percentage = 3.60 ÷ 0.30.","ICDC"],
+["Hospitality","A tour operator that plans and sells group trips belongs to which segment of the industry?",["Recreation","Lodging","Tourism","Food service"],2,"Tourism includes businesses that plan and organize trips.","State"],
+["Hospitality","A theme park charges less on weekdays to even out attendance. This is an example of:",["Demand-based pricing","Price fixing","Bait and switch","Cost-plus pricing only"],0,"Prices change to shift demand away from peaks.","State"],
+["Hospitality","Why would a hotel train staff to remember a returning guest’s room preferences?",["To lower payroll","To personalize service and build loyalty","To avoid reservations","To raise taxes"],1,"Personal touches encourage repeat stays.","State"],
+["Hospitality","A hotel removes single-use plastic bottles and adds water refill stations. Which trend does this reflect?",["Sustainability","Overbooking","Deregulation","Mass marketing"],0,"Reducing waste supports sustainable operations.","State"],
+["Hospitality","Which practice best protects guest payment data at a restaurant?",["Writing card numbers on receipts","Using encrypted chip readers and limiting staff access","Sharing logins","Keeping cards at the register"],1,"Encryption and limited access reduce fraud risk.","State"],
+["Hospitality","A destination sees tourism revenue rise and new restaurants open, creating jobs. This shows tourism’s:",["Economic impact","Seasonal slump","Product life cycle decline","Supply chain delay"],0,"Tourism spending supports local businesses and employment.","State"],
+["Entrepreneurship","A lawn-care business has fixed costs of $9,000, charges $60 per service, and has $24 variable cost per service. How many services are needed to break even?",["150","250","375","400"],1,"9,000 ÷ (60 − 24) = 250.","ICDC"],
+["Entrepreneurship","Sales are $45,000, cost of goods sold is $27,000, and operating expenses are $11,500. What is net profit?",["$6,500","$18,000","$11,500","$34,000"],0,"45,000 − 27,000 − 11,500 = 6,500.","State"],
+["Entrepreneurship","An owner reviews her own skills and equipment to decide what service to add. This is a(n):",["Outside-in analysis","Inside-out analysis","Competitor audit","Cultural scan"],1,"Inside-out analysis starts with internal resources and capabilities.","State"],
+["Entrepreneurship","A lender asks an entrepreneur to pledge a delivery van to secure a loan. The van is:",["Equity","Collateral","A dividend","Working capital"],1,"Collateral is pledged to guarantee repayment.","State"],
+["Entrepreneurship","A company cuts advertising on a declining product to maximize short-term profit. This is a:",["Penetration strategy","Harvest strategy","Growth strategy","Diversification"],1,"Harvesting reduces spending on a declining product while profits remain.","ICDC"],
+["Entrepreneurship","A plan for the next 12 months that lists specific actions is a:",["Strategic plan","Tactical plan","Mission statement","Vision statement"],1,"Tactical plans are short range and action focused.","State"],
+["Entrepreneurship","A business replaces one full-time worker paid $700 a week with two part-time workers paid $11 an hour, each working 20 hours a week. What is the weekly savings?",["$200","$260","$440","$700"],1,"Part-time pay is 2 × 20 × $11 = $440; $700 − $440 = $260.","ICDC"],
+["Entrepreneurship","Which is an external factor that can affect a business?",["Employee training budget","A rise in interest rates","Store layout","Product pricing choices"],1,"External factors are outside the owner’s control.","State"],
+["Entrepreneurship","A pure risk differs from a speculative risk because a pure risk involves:",["The chance of loss or no loss only","The chance of gain","No uncertainty","Only investments"],0,"Speculative risk can also produce a gain.","State"],
+["Entrepreneurship","Option A costs $1,200 a month and Option B costs $950. What is the differential cost?",["$150","$250","$950","$2,150"],1,"The difference between alternatives is $250.","ICDC"],
+["Entrepreneurship","Which form of ownership offers limited personal liability and is owned by shareholders?",["Sole proprietorship","General partnership","Corporation","Cooperative only"],2,"Shareholders’ personal assets are generally protected.","State"],
+["Entrepreneurship","The market analysis section of a feasibility study mainly addresses whether:",["The owner likes the idea","Enough customers and demand exist","Employees need training","A logo is ready"],1,"Market analysis tests demand and the competitive environment.","State"],
+["Entrepreneurship","A vision statement describes:",["Last year’s sales","What the business hopes to become","Daily tasks","Loan terms"],1,"Vision statements describe future direction.","State"],
+["Entrepreneurship","Sales are $500,000 and expenses are $410,000. The owner sets aside 40% of profit for equipment. How much is budgeted?",["$20,000","$36,000","$90,000","$200,000"],1,"Profit is $90,000; 40% = $36,000.","ICDC"],
+["Entrepreneurship","A shop keeps turning away orders because it cannot keep up. What should the owner consider?",["Closing early","Hiring help or expanding capacity","Raising stress levels","Ending marketing"],1,"Turned-away demand signals a need for more capacity.","State"],
+["Entrepreneurship","Which forecasting method gathers anonymous predictions from experts in rounds of questionnaires?",["Delphi technique","Focus group","Break-even analysis","Trend line"],0,"The Delphi technique keeps responses anonymous and refines them.","ICDC"],
+["Entrepreneurship","Which is an example of pull marketing?",["Door-to-door sales","Blog and search-optimized content that customers find","Cold calling","Trade-show giveaways pushed to resellers"],1,"Pull marketing draws customers to seek out the brand.","State"],
+["Entrepreneurship","A pizza shop’s promise is “Delivered in 30 minutes or it’s free.” This unique selling proposition relates to the:",["Guarantee","Placement","Logo","Mission"],0,"A guarantee is an assurance backing the product or service.","ICDC"],
+["Finance","A business owner compares the extra revenue from adding a second shift with the extra cost of running it. This decision tool is called:",["SWOT analysis","Marginal analysis","A process map","A mission review"],1,"Marginal analysis weighs the added benefit of an action against its added cost.","State"],
+["Finance","Planned advertising spending was $8,000 and actual spending was $9,300. What is the variance?",["$1,300 over budget","$1,300 under budget","$8,000 over budget","$17,300 over budget"],0,"Variance = actual − planned = $1,300, which is over budget.","ICDC"],
+["Finance","You want $5,000 in two years and can earn 5% compounded annually. About how much should you deposit today?",["$4,500.00","$4,535.15","$4,545.45","$4,750.00"],1,"Present value = 5,000 ÷ 1.05² = 5,000 ÷ 1.1025.","ICDC"],
+["Finance","A company’s debt-to-equity ratio rises sharply. What does this most likely suggest to investors?",["Lower financial risk","Higher financial risk","Higher dividends","A tax refund"],1,"More borrowing relative to equity increases risk.","State"],
+["Finance","A planner who must put a client’s interests ahead of her own is acting as a:",["Fiduciary","Broker only","Competitor","Underwriter"],0,"A fiduciary has a duty to act in the client’s best interest.","State"],
+["Finance","Which market trades short-term, low-risk securities such as treasury bills?",["Commodities market","Money market","Insurance market","Real estate market"],1,"Money markets handle short-term, low-risk instruments.","State"],
+["Finance","A compliance audit is mainly used to:",["Improve advertising","Check that the business follows laws and regulations","Set prices","Recruit employees"],1,"Compliance audits find gaps between practice and required rules.","State"],
+["Finance","A business paid a $2,000 nonrefundable course fee for an employee who then resigned. The fee is a:",["Sunk cost","Differential cost","Current asset","Dividend"],0,"Sunk costs have been spent and cannot be recovered.","State"],
+["Finance","A company pays no dividends and keeps its earnings. Which equity item grows?",["Treasury stock","Retained earnings","Accounts payable","Depreciation"],1,"Earnings kept in the business become retained earnings.","State"],
+["Finance","A stock’s 52-week range is $18 to $62. What does this wide range most likely suggest?",["Low volatility","High volatility","A guaranteed dividend","A stock split"],1,"A large price swing signals a volatile, riskier stock.","ICDC"],
+["Finance","A firm assigns the cost of a shared software license to each department that uses it. This is called:",["Allocating costs","Eliminating sunk costs","Forecasting sales","Auditing"],0,"Cost allocation assigns costs to departments or projects.","State"],
+["Finance","A company has total assets of $250,000 and liabilities of $140,000. What is shareholders’ equity?",["$390,000","$110,000","$140,000","$250,000"],1,"Equity = assets − liabilities.","ICDC"],
+["Finance","A company has liabilities of $140,000 and equity of $110,000. What is its debt-to-equity ratio (rounded)?",["0.79","1.27","1.78","2.27"],1,"140,000 ÷ 110,000 ≈ 1.27.","ICDC"],
+["Finance","A manufacturer cannot find a commercial insurer for a common risk in its industry, so it forms its own insurance subsidiary. This is:",["Group insurance","Captive insurance","Term insurance","Self-employment"],1,"Captive insurance is an in-house insurer for a parent company.","State"],
+["Finance","Why do audit trails matter in financial record keeping?",["They help identify inconsistencies and detect errors or fraud","They track competitors","They set employee pay","They design products"],0,"An audit trail tracks transactions from start to finish.","State"],
+["Finance","A $2,000 deposit earns 6% compounded annually for 2 years. What is the total value?",["$2,240.00","$2,247.20","$2,360.00","$2,120.00"],1,"2,000 × 1.06² = $2,247.20.","ICDC"],
+["Finance","Home bias is an investor’s tendency to:",["Favor domestic investments over foreign ones","Buy only bonds","Avoid all risk","Own real estate only"],0,"Investors often prefer familiar domestic markets.","State"],
+["Finance","A bank and an insurance company merge into one organization. This is an example of:",["Convergence","Deflation","Bancassurance only","Liquidation"],0,"Convergence combines providers from different financial sectors.","State"],
+["Finance","Which gift is generally tax-deductible for the donor?",["A vacation home to a relative","A donation to a qualified charity","Stock to a friend","Cash to a neighbor"],1,"Qualified charitable donations can be deducted.","State"],
+["Marketing","A company sells a $200 premium blender and adds a $120 model. Many premium buyers switch, and total profit falls even though unit sales rise. Which concept best explains this?",["Price skimming","Cannibalization","Market penetration","Positioning"],1,"The new product takes sales (and margin) from the company’s own existing product.","ICDC"],
+["Marketing","A brand with strong brand equity launches a new product category under its existing name. This strategy is:",["Brand extension","Private labeling","Co-branding","Brand licensing"],0,"A brand extension uses an established name to enter a new category.","ICDC"],
+["Marketing","A cereal maker pays supermarkets for prime shelf space and supplies retailers with display materials. This is part of a:",["Pull strategy","Push strategy","Niche strategy","Skimming strategy"],1,"A push strategy promotes to channel members so they push the product to consumers.","ICDC"],
+["Marketing","A survey of 2,000 randomly chosen customers is used to estimate the preferences of all 80,000 customers. The 2,000 customers are the:",["Population","Sample","Census","Panel"],1,"A sample is a subset used to represent the larger population.","ICDC"],
+["Marketing","Demand for a product is inelastic. A company raises its price 10% and quantity sold falls 4%. What happens to total revenue?",["It rises","It falls","It stays the same","It cannot be determined"],0,"With inelastic demand, quantity falls proportionally less than price rises, so revenue increases.","ICDC"],
+["Finance","A company holds mostly equipment and real estate and very little cash. Which risk is it most exposed to?",["Liquidity risk","Currency risk","Inflation risk only","Marketing risk"],0,"Liquidity risk is the chance of being unable to meet short-term obligations.","ICDC"],
+["Finance","An advisor recommends a product that pays her a higher commission even though a cheaper product suits the client better. Which duty is most clearly violated?",["Fiduciary duty","Statute of limitations","Due date","Proxy voting"],0,"A fiduciary must put the client’s interests first.","ICDC"],
+["Finance","A firm’s current ratio is 0.8. What does this most likely indicate?",["Strong short-term liquidity","Current liabilities exceed current assets","High profitability","No debt"],1,"A ratio below 1 means current liabilities are larger than current assets.","ICDC"],
+["Finance","Diversification is mainly used to reduce which kind of risk?",["Unsystematic (company-specific) risk","Systematic (market-wide) risk","Inflation risk","Tax risk"],0,"Spreading investments cuts company-specific risk but not market-wide risk.","ICDC"],
+["Finance","A $12,000 annual lease is allocated to departments by square footage. Sales uses 600 sq ft and Admin uses 400 sq ft. What is Sales’ share?",["$4,800","$6,000","$7,200","$8,400"],2,"Sales uses 600 of 1,000 sq ft, or 60%; 60% of $12,000 = $7,200.","ICDC"],
+["Hospitality","A resort raises weekend rates when forecast occupancy tops 90% and lowers them when it falls below 60%. This practice is:",["Overbooking","Yield (revenue) management","Guest recovery","Cost-plus pricing"],1,"Yield management adjusts rates to demand to maximize revenue.","ICDC"],
+["Hospitality","A hotel has an ADR of $140 and an occupancy rate of 70%. What is its RevPAR?",["$70","$98","$140","$210"],1,"RevPAR = ADR × occupancy = 140 × 0.70.","ICDC"],
+["Business Management","A board hires an independent firm to examine the company’s financial statements. This is a(n):",["Internal audit","External audit","Variance report","Compliance memo"],1,"An independent outside examination is an external audit.","ICDC"],
+["Business Management","A manager supervises 18 direct reports, and coaching quality has dropped. Which concept is most relevant?",["Scalar principle","Span of control","Delegation of liability","Benchmarking"],1,"Span of control is how many people a manager can effectively supervise.","ICDC"],
+["Business Management","An employee approves a supplier contract in which the employee holds a financial interest. This is an example of:",["Transparency","A conflict of interest","Benchmarking","Delegation"],1,"A personal stake can compromise impartial decisions.","ICDC"],
+["Entrepreneurship","Contribution margin per unit is $18 and fixed costs are $7,200. How many units must be sold to earn a $3,600 profit?",["400","600","200","800"],1,"Units = (fixed costs + target profit) ÷ contribution margin = 10,800 ÷ 18.","ICDC"],
+["Economics","A central bank buys government securities to lower interest rates and encourage borrowing. This is:",["Expansionary monetary policy","Contractionary fiscal policy","Protectionism","Price fixing"],0,"Lowering rates to stimulate spending is expansionary monetary policy.","ICDC"],
+["Business Law","A contract needs an offer, acceptance, and what else to be legally binding?",["Consideration","A notary","A warranty","A patent"],0,"Each party must give something of value, called consideration.","State"],
+["Business Law","A customer slips on an unmarked wet floor. The store’s failure to use reasonable care is:",["Defamation","Negligence","Breach of contract","Infringement"],1,"Negligence is harm caused by failing to use reasonable care.","State"],
+["Business Law","A rival falsely tells a newspaper that your restaurant has health violations. Which claim fits best?",["Defamation","Appropriation","Negligence","Agency"],0,"False statements that harm a reputation are defamation.","State"],
+["Business Law","Which form of intellectual property protects an invention for a set number of years?",["Trademark","Copyright","Patent","Warranty"],2,"A patent protects inventions for a limited period.","State"],
+["Business Law","A supplier delivers weeks late, violating the agreed terms. This is a:",["Tort","Breach of contract","Consideration","Statute"],1,"Failing to perform agreed terms is a breach of contract.","State"],
+["Business Law","An agent signs a contract within the authority the principal gave. Who is generally bound?",["Only the agent","The principal","Neither party","The third party only"],1,"An agent acting within authority binds the principal.","ICDC"],
+["Business Law","A product comes with a written promise that it will work for one year. This is a(n):",["Implied warranty","Express warranty","Patent","Disclaimer"],1,"A stated, written promise is an express warranty.","ICDC"],
+["Operations","A store sells 20 units a day, supplier lead time is 6 days, and safety stock is 40 units. What is the reorder point?",["120","140","160","200"],2,"Reorder point = (daily use × lead time) + safety stock = 120 + 40.","ICDC"],
+["Operations","A company orders materials to arrive only as production needs them, keeping inventory low. This is:",["Just-in-time","Backordering","Safety stock","Cross-docking only"],0,"Just-in-time ordering minimizes stored inventory.","State"],
+["Operations","Which document does a buyer send to authorize a purchase from a vendor?",["Invoice","Purchase order","Receipt","Packing slip"],1,"A purchase order authorizes the purchase; an invoice is the seller’s bill.","State"],
+["Operations","The longest chain of dependent tasks that sets the minimum project duration is the:",["Gantt bar","Critical path","Deliverable","Milestone"],1,"Delays on the critical path delay the whole project.","ICDC"],
+["Operations","Which approach focuses on cutting waste while maximizing customer value?",["Lean production","Mass customization","Overbooking","Franchising"],0,"Lean production targets waste elimination.","State"],
+["Operations","A customer orders an item that is out of stock and will ship when restocked. This is a:",["Backorder","Return","Purchase order","Drop shipment"],0,"A backorder is an order held until stock arrives.","State"]];
+var $=function(i){return document.getElementById(i)};
+function sh(a){return a.map(function(x){return[Math.random(),x]}).sort(function(a,b){return a[0]-b[0]}).map(function(x){return x[1]})}
+var qs=[],qi=0,sc=0,log=[];
+function stats(){var s={};try{s=JSON.parse(localStorage.getItem("decaStats")||"{}")}catch(e){}$("stats").textContent=s.r?"Your progress on this device: "+s.r+" rounds, "+Math.round(100*s.c/s.a)+"% correct overall, best round "+s.b+"%.":"Finish a round to start tracking your progress on this device."}
+function save(){try{var s=JSON.parse(localStorage.getItem("decaStats")||"{}");s.r=(s.r||0)+1;s.a=(s.a||0)+qs.length;s.c=(s.c||0)+sc;s.b=Math.max(s.b||0,Math.round(100*sc/qs.length));localStorage.setItem("decaStats",JSON.stringify(s))}catch(e){}stats()}
+function start(){var c=$("qcl").value,l=$("qlv").value;qs=sh(Q.filter(function(x){return(!c||x[0]==c)&&(!l||(x[5]||"Basic")==l)})).slice(0,parseInt($("qn").value,10)||10);qi=0;sc=0;log=[];show()}
+function show(){var b=$("quiz");
+if(qi>=qs.length){b.innerHTML='<h3>Round complete</h3><p class="qq">'+sc+' of '+qs.length+' correct</p><button class="btn" id="again">Play again</button> '+(sc<qs.length?'<button class="btn alt" id="retry">Retry missed ('+(qs.length-sc)+')</button>':'')+'<h3 style="margin-top:28px">Review every question</h3>'+log.map(function(r,i){return'<div class="rv '+(r.ok?'ok':'no')+'"><b>'+(i+1)+'. '+(r.ok?'Correct':'Incorrect')+'</b><p style="margin:6px 0">'+r.q+'</p><p style="margin:0">Your answer: '+r.a+'</p>'+(r.ok?'':'<p style="margin:0">Correct answer: '+r.c+'</p>')+'<p class="why">'+r.e+'</p></div>'}).join("");$("again").onclick=start;if($("retry"))$("retry").onclick=function(){qs=log.filter(function(r){return!r.ok}).map(function(r){return r.qq});qi=0;sc=0;log=[];show()};save();return}
+var q=qs[qi],o=sh(q[2].map(function(t,i){return{t:t,ok:i==q[3]}}));
+b.innerHTML='<span style="color:var(--muted);font-size:15px">Question '+(qi+1)+' of '+qs.length+' · '+q[0]+' · '+(q[5]||"Basic")+'</span><p class="qq">'+q[1]+'</p><div id="opts"></div><div id="fb"></div>';
+o.forEach(function(x){var e=document.createElement("button");e.className="opt";e.textContent=x.t;
+e.onclick=function(){var all=$("opts").children;
+for(var i=0;i<all.length;i++){all[i].disabled=true}
+var good=x.ok;if(good)sc++;log.push({q:q[1],a:x.t,c:q[2][q[3]],ok:good,e:q[4],qq:q});
+for(var j=0;j<all.length;j++){var d=o[j];if(d.ok){all[j].classList.add("ok");all[j].textContent="Correct: "+d.t}}
+if(!good){e.classList.add("no");e.textContent="Your answer: "+x.t}
+$("fb").innerHTML='<div class="why"><b>'+(good?"Correct. ":"Not quite. ")+'</b>'+q[4]+'</div><button class="btn" id="nx">'+(qi+1>=qs.length?"See score":"Next question")+'</button>';
+$("nx").onclick=function(){qi++;show()};$("nx").focus()};
+$("opts").appendChild(e)})}
+$("qnew").onclick=start;$("qcl").onchange=start;$("qlv").onchange=start;$("qn").onchange=start;stats();start();
+var T=["learn","roleplay","test","vocab"];
+function tab(){var h=location.hash.slice(1);if(T.indexOf(h)<0){if(!tab.cur)h="learn";else return}
+tab.cur=h;T.forEach(function(t){$("tab-"+t).hidden=t!=h});
+document.querySelectorAll(".nav a.tab").forEach(function(a){if(a.dataset.t==h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});window.scrollTo(0,0)}
+window.addEventListener("hashchange",tab);tab();
+})();
+</script>
+<script>
+(function(){
+var V=[
+["Market segmentation","Dividing a market into groups with shared needs or traits.","Marketing"],
+["Positioning","Creating a specific image of a product in customers’ minds compared with competitors.","Marketing"],
+["Brand equity","The added value a brand name gives a product beyond its features.","Marketing"],
+["Brand extension","Using an established brand name to launch a product in a new category.","Marketing"],
+["Cannibalization","When a new product takes sales from the same company’s existing product.","Marketing"],
+["Price skimming","Setting a high starting price for a new product, then lowering it over time.","Marketing"],
+["Penetration pricing","Setting a low starting price to win market share quickly.","Marketing"],
+["Push strategy","Promoting to channel members so they push the product toward consumers.","Marketing"],
+["Pull strategy","Promoting directly to consumers so they demand the product from retailers.","Marketing"],
+["Primary research","New data collected firsthand for a specific purpose, such as a survey.","Marketing"],
+["Secondary research","Existing data that someone else already collected.","Marketing"],
+["Customer lifetime value","The total profit a business expects from a customer over the whole relationship.","Marketing"],
+["Liquidity","How easily an asset can be turned into cash, or ability to pay short-term debts.","Finance"],
+["Fiduciary","A person or firm legally required to act in a client’s best interest.","Finance"],
+["Present value","What a future amount of money is worth today at a given interest rate.","Finance"],
+["Compound interest","Interest earned on both the original amount and previously earned interest.","Finance"],
+["Debt-to-equity ratio","Total liabilities divided by shareholders’ equity; a measure of financial risk.","Finance"],
+["Retained earnings","Profits a company keeps instead of paying out as dividends.","Finance"],
+["Collateral","An asset pledged to a lender to secure a loan.","Finance"],
+["Variance analysis","Comparing planned (budgeted) amounts with actual results.","Finance"],
+["Sunk cost","A cost already spent that cannot be recovered.","Finance"],
+["Marginal analysis","Comparing the added benefit of an action with its added cost.","Finance"],
+["Diversification","Spreading investments to reduce company-specific risk.","Finance"],
+["Audit trail","A record that follows a transaction from start to finish to detect errors or fraud.","Finance"],
+["ADR","Average daily rate: room revenue divided by rooms sold.","Hospitality"],
+["RevPAR","Revenue per available room: room revenue divided by rooms available.","Hospitality"],
+["Occupancy rate","Rooms sold divided by rooms available.","Hospitality"],
+["Yield management","Adjusting rates and inventory as demand changes to maximize revenue.","Hospitality"],
+["Guest recovery","Turning a dissatisfied guest into a satisfied one through quick, quality service.","Hospitality"],
+["Overbooking","Accepting more reservations than rooms to offset expected no-shows.","Hospitality"],
+["Authorization hold","A temporary hold on part of a card’s credit limit to cover expected charges.","Hospitality"],
+["Ecotourism","Travel that limits environmental harm and supports local communities.","Hospitality"],
+["Span of control","The number of employees a manager directly supervises.","Business Management"],
+["Scalar principle","Authority should flow in a clear, unbroken line from top to bottom.","Business Management"],
+["Delegation","Assigning work to others while keeping accountability for the result.","Business Management"],
+["Corporate governance","The system of rules and processes by which a company is directed and controlled.","Business Management"],
+["Conflict of interest","A situation where personal gain could compromise impartial judgment.","Business Management"],
+["Stakeholder","Anyone affected by a business’s success or failure.","Business Management"],
+["Gantt chart","A bar chart showing project tasks along a timeline.","Business Management"],
+["Benchmarking","Comparing your performance with the best practices of others.","Business Management"],
+["Break-even point","The sales level where total revenue equals total costs.","Entrepreneurship"],
+["Contribution margin","Selling price minus variable cost per unit.","Entrepreneurship"],
+["Equity financing","Raising money by selling ownership shares.","Entrepreneurship"],
+["Venture capital","Investment in high-growth startups in exchange for ownership.","Entrepreneurship"],
+["Unique selling proposition","The main feature or benefit that sets a business apart from competitors.","Entrepreneurship"],
+["Minimum viable product","A basic version used to test an idea with real customers.","Entrepreneurship"],
+["Harvest strategy","Cutting spending on a declining product to maximize profit from it.","Entrepreneurship"],
+["Feasibility study","An organized look at whether a business idea can succeed.","Entrepreneurship"],
+["Differential cost","The difference in cost between two alternatives.","Entrepreneurship"],
+["Tactical plan","A short-range plan of specific actions, usually about a year.","Entrepreneurship"],
+["Opportunity cost","The value of the next best alternative you give up.","Economics"],
+["Elasticity of demand","How much quantity demanded changes when price changes.","Economics"],
+["GDP","The total value of goods and services a country produces in a period.","Economics"],
+["Fiscal policy","Government use of spending and taxes to influence the economy.","Economics"],
+["Monetary policy","Central bank actions on money supply and interest rates.","Economics"],
+["Perfect competition","A market with many sellers of identical products.","Economics"],
+["Scarcity","Limited resources compared with unlimited wants.","Economics"],
+["Recession","A significant decline in economic activity lasting months.","Economics"],
+["Substitute goods","Products that can replace each other, so a price rise in one raises demand for the other.","Economics"],
+["Target market","The specific group of customers a business aims its products and promotion at.","Marketing"],
+["Marketing mix","The four Ps: product, price, place, and promotion.","Marketing"],
+["Marketing concept","The idea that a business succeeds by satisfying customer wants and needs.","Marketing"],
+["Market share","The percentage of total industry sales a company holds.","Marketing"],
+["Demographics","Measurable traits of a population, such as age, income, and gender.","Marketing"],
+["Psychographics","Customer lifestyle, attitudes, interests, and values.","Marketing"],
+["SWOT analysis","Evaluating strengths, weaknesses, opportunities, and threats.","Marketing"],
+["Competitive advantage","Something that lets a business outperform rivals, such as lower cost or better quality.","Marketing"],
+["Loss leader","An item sold at or below cost to attract customers who buy other items.","Marketing"],
+["Cooperative advertising","Advertising costs shared between a manufacturer and a retailer.","Marketing"],
+["Sales promotion","Short-term incentives such as coupons, samples, and contests that spur purchases.","Marketing"],
+["Public relations","Managing a business’s image and relationships with the public.","Marketing"],
+["Word-of-mouth marketing","Customers recommending a product to others, usually without payment.","Marketing"],
+["Cross-selling","Suggesting related products to a customer who is already buying.","Marketing"],
+["Upselling","Persuading a customer to buy a higher-priced version of a product.","Marketing"],
+["Brand loyalty","A customer’s habit of repeatedly buying the same brand.","Marketing"],
+["Focus group","A small group guided in discussion to gather opinions on a product or idea.","Marketing"],
+["Point of purchase","The place where a customer makes a buying decision, such as a checkout display.","Marketing"],
+["Asset","Anything of value that a business owns.","Finance"],
+["Liability","A debt or obligation a business owes.","Finance"],
+["Equity","The owner’s claim on assets after liabilities are subtracted.","Finance"],
+["Net income","Revenue minus all expenses; also called net profit.","Finance"],
+["Gross profit","Sales minus cost of goods sold.","Finance"],
+["Cash flow","The movement of money into and out of a business.","Finance"],
+["Balance sheet","A statement of assets, liabilities, and equity on one date.","Finance"],
+["Income statement","A statement of revenue, expenses, and profit over a period.","Finance"],
+["Budget","A plan for how income will be earned and spent.","Finance"],
+["Credit score","A number summarizing how reliably a person repays borrowed money.","Finance"],
+["APR","Annual percentage rate: the yearly cost of borrowing, including fees.","Finance"],
+["Principal","The original amount borrowed or invested, before interest.","Finance"],
+["Dividend","A share of company profit paid to stockholders.","Finance"],
+["Bond","A loan to a company or government that pays interest and returns principal later.","Finance"],
+["Mutual fund","A pooled investment managed professionally and holding many securities.","Finance"],
+["Depreciation","Spreading the cost of a long-lived asset over its useful life.","Finance"],
+["Accounts receivable","Money customers owe a business for goods or services sold on credit.","Finance"],
+["Accounts payable","Money a business owes to its suppliers.","Finance"],
+["Net worth","Total assets minus total liabilities.","Finance"],
+["Portfolio","The collection of investments an investor owns.","Finance"],
+["Deductible","The amount a policyholder pays before insurance starts to pay.","Finance"],
+["Insurance premium","The regular payment made to keep an insurance policy active.","Finance"],
+["Amenities","Extra features or services a property offers guests, such as a pool or Wi-Fi.","Hospitality"],
+["Convention and visitors bureau","An organization that promotes a destination to travelers and meeting planners.","Hospitality"],
+["Peak season","The time of year with the highest demand and highest prices.","Hospitality"],
+["Property management system","Software that handles reservations, check-in, billing, and room status.","Hospitality"],
+["Concierge","A staff member who arranges services and recommendations for guests.","Hospitality"],
+["No-show","A guest who has a reservation but neither arrives nor cancels.","Hospitality"],
+["Rack rate","A hotel’s standard published room price before discounts.","Hospitality"],
+["Prime cost","A restaurant’s food and beverage cost plus labor cost.","Hospitality"],
+["Front of house","The guest-facing areas and staff, such as the dining room or front desk.","Hospitality"],
+["Back of house","Areas and staff guests do not see, such as the kitchen and laundry.","Hospitality"],
+["Heritage tourism","Travel to experience a place’s history, culture, and historic sites.","Hospitality"],
+["Sustainable tourism","Tourism that meets visitor needs while protecting the environment and local culture.","Hospitality"],
+["Mission statement","A brief statement of a business’s purpose and core values.","Business Management"],
+["Vision statement","A description of what a business hopes to become in the future.","Business Management"],
+["SMART goal","A goal that is specific, measurable, achievable, relevant, and time-bound.","Business Management"],
+["Organizational chart","A diagram showing positions and reporting relationships in a company.","Business Management"],
+["Chain of command","The line of authority from top management down to employees.","Business Management"],
+["Decentralization","Spreading decision-making authority to lower levels of an organization.","Business Management"],
+["Matrix structure","An organization where employees report to both a functional and a project manager.","Business Management"],
+["Lateral communication","Communication between people on the same level of an organization.","Business Management"],
+["Motivation","The drive that moves a person to act and meet goals.","Business Management"],
+["Autocratic leadership","A style where the leader makes decisions alone.","Business Management"],
+["Democratic leadership","A style where the leader involves the team in decisions.","Business Management"],
+["Laissez-faire leadership","A hands-off style where employees make most decisions on their own.","Business Management"],
+["Performance appraisal","A formal evaluation of how well an employee does the job.","Business Management"],
+["Job description","A written list of a position’s duties and requirements.","Business Management"],
+["Controlling","The management function of measuring results and correcting problems.","Business Management"],
+["Ethics","Principles of right and wrong that guide behavior.","Business Management"],
+["Social responsibility","A business’s duty to act in ways that benefit society as well as itself.","Business Management"],
+["Whistleblower","An employee who reports illegal or unethical conduct inside an organization.","Business Management"],
+["Entrepreneur","A person who starts and takes on the risk of running a business.","Entrepreneurship"],
+["Intrapreneur","An employee who acts like an entrepreneur inside an existing company.","Entrepreneurship"],
+["Sole proprietorship","A business owned and run by one person who is personally liable for debts.","Entrepreneurship"],
+["Partnership","A business owned by two or more people who share profits and liability.","Entrepreneurship"],
+["Corporation","A business that is a separate legal entity owned by shareholders.","Entrepreneurship"],
+["Franchise","A license to operate a business using an established company’s brand and system.","Entrepreneurship"],
+["Business model","How a business plans to create, deliver, and earn money from value.","Entrepreneurship"],
+["Startup capital","The money needed to launch a new business.","Entrepreneurship"],
+["Working capital","Current assets minus current liabilities; money for daily operations.","Entrepreneurship"],
+["Overhead","Ongoing business costs not tied directly to a product, such as rent.","Entrepreneurship"],
+["Fixed cost","A cost that stays the same regardless of sales volume.","Entrepreneurship"],
+["Variable cost","A cost that changes with the amount produced or sold.","Entrepreneurship"],
+["Profit margin","Profit as a percentage of sales.","Entrepreneurship"],
+["Angel investor","A wealthy individual who funds early-stage businesses for ownership.","Entrepreneurship"],
+["Crowdfunding","Raising small amounts of money from many people, usually online.","Entrepreneurship"],
+["Bootstrapping","Funding a business with personal savings and revenue instead of outside money.","Entrepreneurship"],
+["Niche market","A small, specialized segment of a larger market.","Entrepreneurship"],
+["Supply","The amount of a product sellers are willing to offer at various prices.","Economics"],
+["Demand","The amount of a product buyers are willing and able to purchase at various prices.","Economics"],
+["Equilibrium price","The price at which quantity supplied equals quantity demanded.","Economics"],
+["Shortage","When quantity demanded is greater than quantity supplied at a given price.","Economics"],
+["Surplus","When quantity supplied is greater than quantity demanded at a given price.","Economics"],
+["Market economy","An economic system where buyers and sellers make most decisions.","Economics"],
+["Command economy","An economic system where the government makes most economic decisions.","Economics"],
+["Mixed economy","A system combining private choice and government direction.","Economics"],
+["Monopoly","A market with a single seller and no close substitutes.","Economics"],
+["Oligopoly","A market dominated by a few large sellers.","Economics"],
+["Inflation","A general, sustained rise in prices over time.","Economics"],
+["Deflation","A general, sustained fall in prices over time.","Economics"],
+["Business cycle","The repeating pattern of expansion, peak, contraction, and trough.","Economics"],
+["Trade deficit","When a country imports more than it exports.","Economics"],
+["Tariff","A tax on imported goods.","Economics"],
+["Comparative advantage","The ability to produce a good at a lower opportunity cost than others.","Economics"],
+["Productivity","The amount of output produced from a given amount of input.","Economics"],
+["Consumer price index","A measure of price changes for a typical basket of consumer goods.","Economics"],
+["Capital goods","Human-made items used to produce other goods, such as machines.","Economics"],
+["Contract","A legally binding agreement between two or more parties.","Business Law"],
+["Consideration","Something of value each party gives in a contract.","Business Law"],
+["Tort","A civil wrong that causes harm to another person or property.","Business Law"],
+["Negligence","Harm caused by failing to use reasonable care.","Business Law"],
+["Defamation","Making false statements that harm someone’s reputation.","Business Law"],
+["Patent","Legal protection for an invention for a set number of years.","Business Law"],
+["Trademark","Legal protection for a brand name, logo, or symbol.","Business Law"],
+["Copyright","Legal protection for original creative works such as writing and music.","Business Law"],
+["Warranty","A promise about the quality or performance of a product.","Business Law"],
+["Agency","A relationship where one person acts for another with authority.","Business Law"],
+["Breach of contract","Failing to carry out the terms of a legally binding agreement.","Business Law"],
+["Intellectual property","Creations of the mind, such as inventions, brands, and written works.","Business Law"],
+["Supply chain","The network of people and companies that turns materials into a product delivered to customers.","Operations"],
+["Inventory","The goods a business holds for sale or for use in production.","Operations"],
+["Just-in-time","Ordering goods to arrive only when needed to keep inventory low.","Operations"],
+["Quality control","Checking products or services to meet standards and catch errors.","Operations"],
+["Lean production","A method focused on cutting waste while maximizing customer value.","Operations"],
+["Six Sigma","A data-driven method for reducing defects and improving processes.","Operations"],
+["Purchase order","A buyer’s document authorizing a purchase from a vendor.","Operations"],
+["Invoice","A seller’s bill listing items, quantities, prices, and terms.","Operations"],
+["Vendor","A business that sells goods or services to another business.","Operations"],
+["Logistics","Planning and managing the movement and storage of goods.","Operations"],
+["Wholesaler","A business that buys in bulk from producers and sells to retailers.","Operations"],
+["Lead time","The time between placing an order and receiving it.","Operations"],
+["Reorder point","The inventory level that triggers a new order.","Operations"],
+["Safety stock","Extra inventory kept to avoid running out.","Operations"],
+["Critical path","The longest chain of project tasks that determines the minimum project time.","Operations"],
+["Deliverable","A tangible or measurable result a project must produce.","Operations"],
+["Backorder","An order for an item that is out of stock and will ship later.","Operations"]];
+var $=function(i){return document.getElementById(i)},mode="list",vs=0,vt=0,kc=0,lc=0;
+function sh(a){return a.map(function(x){return[Math.random(),x]}).sort(function(a,b){return a[0]-b[0]}).map(function(x){return x[1]})}
+function cf(){var c=$("vcl").value;return V.filter(function(x){return!c||x[2]==c})}
+function list(){var s=$("vq").value.toLowerCase(),p=cf().filter(function(x){return!s||x[0].toLowerCase().indexOf(s)>=0||x[1].toLowerCase().indexOf(s)>=0});
+$("vbox").innerHTML=p.length?p.map(function(x){return'<div class="vt"><b>'+x[0]+'</b><span>'+x[2]+'</span><p style="margin:4px 0 0">'+x[1]+'</p></div>'}).join(""):'<p>No terms match. Clear the search or choose another cluster.</p>'}
+function quiz(){var p=cf(),a=p[Math.floor(Math.random()*p.length)],ops=sh([a].concat(sh(V.filter(function(x){return x!==a})).slice(0,3)));
+$("vbox").innerHTML='<p style="color:var(--muted)">Score: '+vs+' of '+vt+'</p><p class="qq">'+a[1]+'</p><div id="vo">'+ops.map(function(x,i){return'<button class="opt" data-i="'+i+'">'+x[0]+'</button>'}).join("")+'</div><div id="vf"></div>';
+$("vo").onclick=function(e){var b=e.target.closest(".opt");if(!b||b.disabled)return;var bt=$("vo").children,good=ops[b.dataset.i]===a;vt++;if(good)vs++;
+for(var i=0;i<bt.length;i++){bt[i].disabled=true;if(ops[i]===a){bt[i].classList.add("ok");bt[i].textContent="Correct: "+a[0]}}
+if(!good){b.classList.add("no");b.textContent="Your answer: "+ops[b.dataset.i][0]}
+$("vf").innerHTML='<div class="why"><b>'+(good?"Correct. ":"Not quite. ")+'</b>'+a[0]+' ('+a[2]+'). Score: '+vs+' of '+vt+'</div><button class="btn" id="vn">Next term</button>';$("vn").onclick=quiz;$("vn").focus()}}
+function card(){var p=cf(),a=p[Math.floor(Math.random()*p.length)],fl=false;
+$("vbox").innerHTML='<p style="color:var(--muted)">I knew it: '+kc+' · Still learning: '+lc+'</p><div class="fc" id="fc" tabindex="0" role="button" aria-label="Flip card"><div id="fct" class="qq">'+a[0]+'</div><small>'+a[2]+'. Tap or press Enter to flip.</small></div><div id="fb" style="margin-top:14px"></div>';
+function flip(){fl=!fl;$("fct").textContent=fl?a[1]:a[0];$("fb").innerHTML=fl?'<button class="btn" id="fk">I knew it</button> <button class="btn alt" id="fs">Still learning</button>':'';if(fl){$("fk").onclick=function(){kc++;card()};$("fs").onclick=function(){lc++;card()}}}
+$("fc").onclick=flip;$("fc").onkeydown=function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();flip()}}}
+function draw(){$("vq").style.display=mode=="list"?"":"none";$("v-list").setAttribute("aria-pressed",mode=="list");$("v-card").setAttribute("aria-pressed",mode=="card");$("v-quiz").setAttribute("aria-pressed",mode=="quiz");if(mode=="list")list();else if(mode=="card")card();else quiz()}
+$("v-list").onclick=function(){mode="list";draw()};$("v-quiz").onclick=function(){mode="quiz";draw()};$("v-card").onclick=function(){mode="card";draw()};
+$("vcl").onchange=draw;$("vq").oninput=list;draw();
+})();
+</script>
+</body>
+</html>
